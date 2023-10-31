@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        /* Define a class for styling specific cells */
+        #highlighted {
+            background-color: green;
+            color: black;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border: 3px solid rgb(93, 91, 91);
+        }
+        #inner {
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border: 3px solid rgb(93, 91, 91);
+        }
+        #whole {
+            border: 3px solid rgb(93, 91, 91);
+        }
+    </style>
+    <script>
+        var n=""
+        n=prompt("give the number your want:")
+        if(n<=1)
+            alert("please neter a number >1 !")
+    </script>
+</head>
+<body>
+
+<table id="whole" >
+    <caption>Multiplication Table</caption>
+    <thead>
+        <tr>
+            <th id="highlighted">^</th>
+            <!-- Create the header row for the table -->
+            <script>
+                        var n=""
+        n=prompt("give the number your want:")
+        if(n<=1)
+            alert("please neter a number >1 !")
+                for (var i = 1; i <= n; i++) {
+                    document.write("<th id='highlighted'>" + i + "</th>");
+                }
+            </script>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Create the table rows with multiplication values -->
+        <script>
+            for (var i = 1; i <=n; i++) {
+                document.write("<tr>");
+                document.write("<td id='highlighted'>" + i + "</td>");
+                for (var j = 1; j <= n; j++) {
+                    document.write("<td id='inner'>" + (i * j) + "</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </tbody>
+</table>
+
+</body>
+</html>
